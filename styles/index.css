@@ -9,6 +9,12 @@ body {
     color: white;
 }
 
+hr {
+    border: none;
+    height: 5px;
+    background-color: #151B23;
+}
+
 /* Header */
 header {
     background-color: #000;
@@ -34,6 +40,7 @@ header img {
     flex-basis: 25%;
     display: grid;
     justify-items: center;
+    text-align: center;
     margin: 0 10px;
 }
 
