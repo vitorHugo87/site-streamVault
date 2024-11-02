@@ -9,6 +9,12 @@ body {
     color: white;
 }
 
+.super {
+    max-width: 1280px;
+    display: grid;
+    margin: auto;
+}
+
 hr {
     border: none;
     height: 3px;
@@ -37,10 +43,14 @@ header img:hover {
 /* Content */
 .content {
     display: flex;
-    margin: 70px 30px;
+    margin: 70px 30px 20px;
     padding: 20px;
     background-color: #212830;
     border-radius: 15px;
+}
+
+.content:not(:first-child) {
+    margin: 20px 30px;
 }
 
 .image {
@@ -81,7 +91,7 @@ header img:hover {
     color: white;
 }
 
-.block button#active, .block button:hover {
+.block button.active, .block button:hover {
     color: #1F6FEB;
     cursor: pointer;
 }
@@ -116,4 +126,51 @@ header img:hover {
 #home #notas img {
     width: 70%;
     filter: invert(100%);
+}
+
+#sinopse p {
+    margin-top: 10px;
+    line-height: 1.3em;
+}
+
+#trailer {
+    width: 100%;
+}
+
+#trailer h2 {
+    margin-bottom: 10px;
+}
+
+.content-2 {
+    display: block;
+}
+
+#analises {
+    display: flex;
+}
+
+.block-3 {
+    margin: 10px 20px;
+    flex-basis: 33%;
+    border: 2px solid #0D1117;
+    padding: 20px;
+}
+
+.analises img {
+    width: 150px;
+    filter: invert(100%);
+    margin: 10px 0;
+}
+
+.analises p.nome {
+    font-size: 1.2em;
+}
+
+#curiosidades {
+    display: flex;
+}
+
+#curiosidades .titulo {
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }
