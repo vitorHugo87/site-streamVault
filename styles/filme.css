@@ -32,31 +32,3 @@ header img {
 header img:hover {
     transform: rotate(360deg);
 }
-
-/* Block-Content */
-.block-content {
-    margin: 20px;
-}
-
-.quatro-blocos {
-    display: flex;
-}
-
-.bloco {
-    flex-basis: 25%;
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.bloco img {
-    width: 100%;
-    margin: 15px 0;
-    transform: scale(1);
-    transition: 1s;
-}
-
-.bloco img:hover {
-    transform: scale(1.05);
-}
