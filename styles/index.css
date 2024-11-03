@@ -50,6 +50,10 @@ header img:hover {
     margin: 0 10px;
 }
 
+.bloco a {
+    width: 100%;
+}
+
 .bloco img {
     width: 100%;
     margin: 15px 0;
