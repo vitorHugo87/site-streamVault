@@ -56,12 +56,13 @@ header img:hover {
 .image {
     flex-basis: 30%;
     margin-right: 20px;
+    position: relative;
 }
 
 .image img {
     width: 100%;
-    position: relative;
-    bottom: 70px;
+    position: absolute;
+    bottom: 20px;
 }
 
 .block {
