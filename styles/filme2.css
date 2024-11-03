@@ -156,3 +156,43 @@ header img:hover {
 #sinop-trailer .trailer iframe {
     border-radius: 10px;
 }
+
+#analises {
+    background-color: #212830;
+    margin: 20px 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#analises .blocks {
+    display: flex;
+    margin-top: 10px;
+}
+
+#analises .blocks .block-4 {
+    flex-basis: 25%;
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 1s;
+}
+
+#analises .blocks .block-4:hover {
+    transform: scale(1.05);
+    border: 2px solid #fff;
+}
+
+#analises .blocks .block-4:not(:last-child) {
+    margin-right: 10px;
+}
+
+#analises .blocks .block-4 img {
+    width: 100px;
+    filter: invert(100%);
+    margin: 5px 0;
+}
+
+#analises .blocks .block-4 p {
+    line-height: 1.4em;
+}
