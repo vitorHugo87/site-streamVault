@@ -109,6 +109,14 @@ header img:hover {
     border: 2px solid #000000;
     padding: 15px;
     margin: 10px 0;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 1s;
+}
+
+#inicio .resumo #notas .nota:hover {
+    transform: scale(1.05);
+    border: 2px solid #fff;
 }
 
 #inicio .resumo #notas .nota:not(:last-child) {
@@ -195,4 +203,48 @@ header img:hover {
 
 #analises .blocks .block-4 p {
     line-height: 1.4em;
+}
+
+#curios-fotos {
+    display: flex;
+    margin: 20px 20px;
+}
+
+#curios-fotos .curiosidades,
+#curios-fotos .fotos {
+    flex-basis: 50%;
+    background-color: #212830;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#curios-fotos .curiosidades {
+    margin-right: 10px;
+}
+
+#curios-fotos .curiosidades h2 {
+    margin-bottom: 10px;
+}
+
+#curios-fotos .curiosidades p {
+    margin: 10px 0;
+    line-height: 1.4em;
+}
+
+#curios-fotos .curiosidades hr {
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+#curios-fotos .fotos h2 {
+    margin-bottom: 10px;
+}
+
+#curios-fotos .fotos .grid-fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#curios-fotos .fotos .grid-fotos img {
+    width: 100%;
 }
