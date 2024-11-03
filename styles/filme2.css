@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #0D1117;
@@ -154,6 +158,7 @@ header img:hover {
 #sinop-trailer .sinopse {
     margin-right: 10px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 #sinop-trailer .sinopse p {
@@ -243,8 +248,10 @@ header img:hover {
 #curios-fotos .fotos .grid-fotos {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 #curios-fotos .fotos .grid-fotos img {
     width: 100%;
+    border-radius: 10px;
 }
