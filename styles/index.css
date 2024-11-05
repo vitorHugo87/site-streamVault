@@ -38,25 +38,25 @@ header img:hover {
     margin: 20px;
 }
 
-.quatro-blocos {
-    display: flex;
+.blocos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
 }
 
 .bloco {
-    flex-basis: 25%;
     display: grid;
     justify-items: center;
     text-align: center;
-    margin: 0 10px;
 }
 
 .bloco a {
     width: 100%;
+    margin: 10px 0;
 }
 
 .bloco img {
     width: 100%;
-    margin: 15px 0;
     transform: scale(1);
     transition: 1s;
 }
