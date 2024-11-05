@@ -47,11 +47,13 @@ header .logo img:hover {
 
 header .navbar {
     display: flex;
+    justify-content: center;
 }
 
 header .navbar form {
     display: flex;
     width: 100%;
+    max-width: 500px;
 }
 
 header .navbar .navbar-input {
@@ -104,10 +106,12 @@ header .navbar .navbar-btn img {
 }
 
 .content button {
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     border: none;
     background-color: #212830;
+    color: #fff;
     font-size: 1.2em;
 }
 
@@ -115,9 +119,4 @@ header .navbar .navbar-btn img {
     cursor: pointer;
     background-color: #262C36;
     border: 2px solid #fff;
-}
-
-.content a {
-    text-decoration: none;
-    color: #fff;
 }
