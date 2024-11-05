@@ -47,11 +47,13 @@ header .logo img:hover {
 
 header .navbar {
     display: flex;
+    justify-content: center;
 }
 
 header .navbar form {
     display: flex;
     width: 100%;
+    max-width: 500px;
 }
 
 header .navbar .navbar-input {
