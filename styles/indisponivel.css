@@ -84,10 +84,10 @@ header .navbar .navbar-btn img {
 
 .content{
     max-width: 1280px;
-    margin: auto;
+    margin: 10px auto;
     display: grid;
-    justify-content: center;
     align-items: center;
+    justify-items: center;
     margin-top: 50px;
     text-align: center;
 }
@@ -113,6 +113,10 @@ header .navbar .navbar-btn img {
     background-color: #212830;
     color: #fff;
     font-size: 1.2em;
+}
+
+.content a {
+    width: 400px;
 }
 
 .content button:hover {
