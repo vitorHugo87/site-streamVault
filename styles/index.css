@@ -141,17 +141,21 @@ header .topicos a.active, header .topicos a:hover {
 /* Responsividade */
 
 @media (max-width: 575.98px) {
-    header {
-        height: 50px;
-    }
     header .logo h1 {
         display: none;
     }
     header .logo img {
         width: 50px;
     }
+    header .navbar {
+        grid-column: 2 / -1;
+    }
     header .topicos {
-        display: none;
+        grid-column: 1 / -1;
+        margin: auto;
+    }
+    header .topicos ul {
+        margin: 0;
     }
     .blocos {
         grid-template-columns: repeat(2, 1fr);
@@ -160,17 +164,21 @@ header .topicos a.active, header .topicos a:hover {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    header {
-        height: 50px;
-    }
     header .logo h1 {
         display: none;
     }
     header .logo img {
         width: 50px;
     }
+    header .navbar {
+        grid-column: 2 / -1;
+    }
     header .topicos {
-        display: none;
+        grid-column: 1 / -1;
+        margin: auto;
+    }
+    header .topicos ul {
+        margin: 0;
     }
     .blocos {
         grid-template-columns: repeat(2, 1fr);
