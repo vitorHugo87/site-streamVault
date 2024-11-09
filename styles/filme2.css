@@ -573,18 +573,23 @@ header .navbar .navbar-btn img {
     #inicio ul {
         flex-wrap: wrap;
     }
-
-    #inicio .imagem {
-        margin: auto;
-    }
+    
     #inicio .imagem .png {
-        display: none;
+        display: block;
     }
 
     #inicio .imagem .poster {
-        display: block;
-        width: 100%;
-        border-radius: 10px;
+        display: none;
+    }
+
+    #analises .blocks {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #curios-fotos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 0 20px;
     }
 }
 
