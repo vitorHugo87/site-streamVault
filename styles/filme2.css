@@ -562,6 +562,18 @@ header .navbar .navbar-btn img {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    #inicio {
+        grid-template-columns: 4fr 6fr;
+    }
+
+    #inicio .resumo {
+        margin: auto;
+    }
+
+    #inicio ul {
+        flex-wrap: wrap;
+    }
+
     #inicio .imagem {
         margin: auto;
     }
