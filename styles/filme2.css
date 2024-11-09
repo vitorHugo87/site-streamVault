@@ -94,25 +94,28 @@ header .navbar .navbar-btn img {
 /* Inicio */
 #inicio {
     background-color: #212830;
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 10px;
     margin: 60px 20px 20px;
     border-radius: 10px;
 }
 
 #inicio .imagem {
-    flex-basis: 30%;
-    margin-right: 20px;
     padding: 10px;
 }
 
-#inicio .imagem img {
+#inicio .imagem .png {
     width: 100%;
     position: relative;
     bottom: 50px;
 }
 
+#inicio .imagem .poster {
+    display: none;
+}
+
 #inicio .resumo {
-    flex-basis: 70%;
     padding: 20px;
 }
 
@@ -192,13 +195,13 @@ header .navbar .navbar-btn img {
 }
 
 #sinop-trailer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 20px 20px;
 }
 
 #sinop-trailer .sinopse,
 #sinop-trailer .trailer {
-    flex-basis: 50%;
     background-color: #212830;
     border-radius: 10px;
     min-height: 250px;
@@ -227,12 +230,13 @@ header .navbar .navbar-btn img {
 }
 
 #analises .blocks {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     margin-top: 10px;
 }
 
 #analises .blocks .block-4 {
-    flex-basis: 25%;
     border: 2px solid #000000;
     padding: 10px;
     border-radius: 10px;
@@ -243,10 +247,6 @@ header .navbar .navbar-btn img {
 #analises .blocks .block-4:hover {
     transform: scale(1.05);
     border: 2px solid #fff;
-}
-
-#analises .blocks .block-4:not(:last-child) {
-    margin-right: 10px;
 }
 
 #analises .blocks .block-4 img {
@@ -260,20 +260,17 @@ header .navbar .navbar-btn img {
 }
 
 #curios-fotos {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     margin: 20px 20px;
 }
 
 #curios-fotos .curiosidades,
 #curios-fotos .fotos {
-    flex-basis: 50%;
     background-color: #212830;
     border-radius: 10px;
     padding: 20px;
-}
-
-#curios-fotos .curiosidades {
-    margin-right: 10px;
 }
 
 #curios-fotos .curiosidades h2 {
@@ -303,4 +300,283 @@ header .navbar .navbar-btn img {
 #curios-fotos .fotos .grid-fotos img {
     width: 100%;
     border-radius: 10px;
+}
+
+/* Responsividade */
+
+@media (max-width: 575.98px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    header .logo h1 {
+        display: none;
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+    header .navbar {
+        grid-column: 2 / -1;
+    }
+
+    header .navbar .navbar-input {
+        height: 32px;
+    }
+
+    #inicio {
+        margin: 20px 10px;
+    }
+
+    #inicio .imagem {
+        grid-column: 1 / -1;
+    }
+
+    #inicio .imagem .png {
+        display: none;
+    }
+
+    #inicio .imagem .poster {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #inicio nav {
+        display: none;
+    }
+
+    #inicio .resumo {
+        grid-column: 1 / -1;
+        padding: 5px 20px 20px 20px;
+    }
+
+    #inicio .resumo h1 {
+        margin-bottom: 10px;
+    }
+
+    #inicio .resumo #notas {
+        display: grid;
+    }
+
+    #inicio .resumo #notas .nota:not(:last-child) {
+        margin-right: 0;
+    }
+
+    #sinop-trailer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 20px 10px;
+    }
+
+    #sinop-trailer .sinopse {
+        margin-right: 0;
+    }
+
+    #analises {
+        margin: 20px 10px;
+    }
+    
+    #analises .blocks {
+        grid-template-columns: 1fr;
+    }
+
+    #curios-fotos {
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+    }
+
+    #curios-fotos .fotos .grid-fotos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+    header .navbar {
+        grid-column: 2 / -1;
+    }
+
+    header .navbar .navbar-input {
+        height: 32px;
+    }
+
+    #inicio {
+        margin: 20px 10px;
+    }
+
+    #inicio .imagem {
+        grid-column: 1 / -1;
+    }
+
+    #inicio .imagem .png {
+        display: none;
+    }
+
+    #inicio .imagem .poster {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #inicio nav {
+        display: none;
+    }
+
+    #inicio .resumo {
+        grid-column: 1 / -1;
+        padding: 5px 20px 20px 20px;
+    }
+
+    #inicio .resumo h1 {
+        margin-bottom: 10px;
+    }
+
+    #inicio .resumo #notas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    #inicio .resumo #notas .nota:not(:last-child) {
+        margin-right: 0;
+    }
+
+    #sinop-trailer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 400px;
+        gap: 10px;
+        margin: 20px 10px;
+    }
+
+    #sinop-trailer .sinopse {
+        margin-right: 0;
+    }
+
+    #analises {
+        margin: 20px 10px;
+    }
+    
+    #analises .blocks {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #curios-fotos {
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+    header .navbar {
+        grid-column: 2 / -1;
+    }
+
+    header .navbar .navbar-input {
+        height: 32px;
+    }
+
+    #inicio {
+        margin: 20px 10px;
+    }
+
+    #inicio .imagem {
+        grid-column: 1 / -1;
+    }
+
+    #inicio .imagem .png {
+        display: none;
+    }
+
+    #inicio .imagem .poster {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #inicio nav {
+        display: none;
+    }
+
+    #inicio .resumo {
+        grid-column: 1 / -1;
+        padding: 5px 20px 20px 20px;
+    }
+
+    #inicio .resumo h1 {
+        margin-bottom: 10px;
+    }
+
+    #inicio .resumo #notas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    #inicio .resumo #notas .nota:not(:last-child) {
+        margin-right: 0;
+    }
+
+    #sinop-trailer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 400px;
+        gap: 10px;
+        margin: 20px 10px;
+    }
+
+    #sinop-trailer .sinopse {
+        margin-right: 0;
+    }
+
+    #analises {
+        margin: 20px 10px;
+    }
+    
+    #analises .blocks {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #curios-fotos {
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #inicio .imagem {
+        margin: auto;
+    }
+    #inicio .imagem .png {
+        display: none;
+    }
+
+    #inicio .imagem .poster {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
