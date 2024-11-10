@@ -5,129 +5,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>No Limite do Amanhã</title>
-    <link rel="stylesheet" href="../styles/filme.css">
-    <script src="../javascript/filme.js"></script>
+    <link rel="stylesheet" href="../styles/filme2.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="../img/logo.png" width="100"></a>
-        <h1>StreamVault</h1>
+        <div class="logo">
+            <a href="index.html"><img src="../img/logo.png"></a>
+            <h1>StreamVault</h1>
+        </div>
+        <div class="navbar">
+            <form action="">
+                <input type="text" class="navbar-input" placeholder="Procurar por filmes, series e animes" name="busca"
+                    id="busca">
+                <button class="navbar-btn" type="submit"><img src="../img/search.png" alt=""></button>
+            </form>
+        </div>
     </header>
 
-    <div class="super">
-        <div class="content">
-            <div class="image">
-                <img src="../img/pngs/limite-do-amanha.png" alt="">
+    <div class="content">
+        <div id="inicio">
+            <div class="imagem">
+                <img class="png" src="../img/pngs/limite-do-amanha.png" alt="">
+                <img class="poster" src="../img/posters/limite-do-amanha.jpg" alt="">
             </div>
-
-            <div id="home" class="block">
+            <div class="resumo">
+                <h1>No Limite do Amanhã</h1>
                 <nav>
-                    <h2>No Limite do Amanhã</h2>
                     <ul>
                         <li><button class="active">Inicio</button></li>
-                        <li><button>Sinopse</button></li>
-                        <li><button>Trailer</button></li>
-                        <li><button>Análises</button></li>
-                        <li><button>Curiosidades</button></li>
-                        <li><button>Fotos</button></li>
+                        <li><a href="#sinop-trailer"><button>Sinopse</button></a></li>
+                        <li><a href="#sinop-trailer"><button>Trailer</button></a></li>
+                        <li><a href="#analises"><button>Análises</button></a></li>
+                        <li><a href="#curios-fotos"><button>Curiosidades</button></a></li>
+                        <li><a href="#curios-fotos"><button>Fotos</button></a></li>
                     </ul>
                 </nav>
+
                 <hr>
+                <p>Lançamento: <b>29 de Maio de 2014</b></p>
+                <p><b>1h 53min | Ação, Ficção Científica</b></p>
                 <p>Direção: <b>Doug Liman</b></p>
                 <p>Roteiro: <b>Christopher McQuarrie, Jez Butterworth</b></p>
                 <p>Elenco: <b>Tom Cruise, Emily Blunt, Bill Paxton</b></p>
                 <p>Título original: <b>Edge Of Tomorrow</b></p>
+
                 <div id="notas">
                     <div class="nota">
-                        <p class="nome">Imprensa</p>
-                        <p class="numero">3,5</p>
-                        <img class="estrelas" src="../img/stars/3_5.png" alt="">
+                        <h4>Imprensa</h4>
+                        <h3>3,5</h3>
+                        <img src="../img/stars/3_5.png" alt="">
                     </div>
                     <div class="nota">
-                        <p class="nome">Público</p>
-                        <p class="numero">4,3</p>
-                        <img class="estrelas" src="../img/stars/4_5.png" alt="">
+                        <h4>Usuários</h4>
+                        <h3>4,3</h3>
+                        <img src="../img/stars/4_5.png" alt="">
                     </div>
                     <div class="nota">
-                        <p class="nome">StreamVault</p>
-                        <p class="numero">4,8</p>
-                        <img class="estrelas" src="../img/stars/5_0.png" alt="">
+                        <h4>StreamVault</h4>
+                        <h3>4,0</h3>
+                        <img src="../img/stars/4_0.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content">
-            <div id="sinopse">
+        <div id="sinop-trailer">
+            <div class="sinopse">
                 <h2>Sinopse</h2>
+                <p><b>Não recomendado para menores de 10 anos</b></p>
                 <p>Quando a Terra é tomada por alienígenas, Bill Cage (Tom Cruise), relações públicas das Forças Armadas
-                    dos
-                    Estados Unidos, é obrigado a ir para a linha de frente no dia do confronto final. Inexplicavelmente
-                    ele
-                    acaba preso no tempo, condenado a reviver esta data repetidamente. A cada morte e renascimento, Cage
-                    avança e, antecipando os acontecimentos, tem a chance de mudar o curso da batalha com o apoio da
-                    guerreira Rita Vrataski (Emily Blunt).</p>
+                    dos Estados Unidos, é obrigado a ir para a linha de frente no dia do confronto final.
+                    Inexplicavelmente ele acaba preso no tempo, condenado a reviver esta data repetidamente. A cada
+                    morte e renascimento, Cage avança e, antecipando os acontecimentos, tem a chance de mudar o curso da
+                    batalha com o apoio da guerreira Rita Vrataski (Emily Blunt).</p>
             </div>
-        </div>
-
-        <div class="content">
-            <div id="trailer">
-                <h2>Trailer</h2>
-                <iframe width="100%" height="650" src="https://www.youtube.com/embed/EZ8N0l9brLM"
-                    title="No Limite do Amanhã - Trailer Oficial 2 (dub) [HD] | 29 de maio nos cinemas" frameborder="0"
+            <div class="trailer">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5Cm4LIqHtKQ"
+                    title="No Limite do Amanhã - Trailer Oficial Legendado Português" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div class="content content-2">
-            <h2>Análises</h2>
-            <div id="analises">
-                <div class="block-3 analises">
-                    <p class="nome"><b>Gazeta do Povo</b></p>
-                    <img src="../img/stars/3_5.png" alt="">
-                    <p>O diretor Doug Liman [...] conseguiu um equilíbrio, bem raro no atual cinema hollywoodiano, entre
-                        ação e
-                        enredo. A trama, aqui, não é apenas mero pretexto para uma sucessão de cenas com efeitos
-                        especiais,
-                        correria, tiros, explosões e pancadaria.</p>
-                </div>
-                <div class="block-3 analises">
-                    <p class="nome"><b>Omelete</b></p>
-                    <img src="../img/stars/4_0.png" alt="">
-                    <p>Ao emular a dinâmica de checkpoints dos games de guerra e tiro, Liman aproveita para criticar o
-                        vazio
-                        desses jogos - em que morrer não significa nada além da contagem de cabeças. Se as guerras hoje
-                        se
-                        fazem no joystick, "No Limite do Amanhã" ajusta seu comentário aos novos tempos.</p>
-                </div>
-                <div class="block-3 analises">
-                    <p class="nome"><b>A Tarde</b></p>
+        <div id="analises">
+            <h2>Analises</h2>
+            <div class="blocks">
+                <div class="block-4">
+                    <h3>A Tarde</h3>
                     <img src="../img/stars/4_5.png" alt="">
-                    <p>É no charme desconcertante do cinema B, que se torna melhor com o passar do tempo, que o filme
-                        encontra
-                        sua grande ressonância. Não se engane: "No Limite do Amanhã" é uma fantasia sobre a bravura e o
-                        herói anônimo. Este é o seu maior mérito.</p>
+                    <p>...é no charme desconcertante do cinema B, que se torna melhor com o passar do tempo, que o filme
+                        encontra sua grande ressonância. Não se engane: "No Limite do Amanhã" é uma fantasia sobre a
+                        bravura e o herói anônimo. Este é o seu maior mérito.</p>
+                </div>
+                <div class="block-4">
+                    <h3>Cinema com Rapadura</h3>
+                    <img src="../img/stars/4_0.png" alt="">
+                    <p>O grande escorregão do filme jaz em seu artificial epílogo, que parece ter sido martelado no
+                        roteiro. Apesar do resultado final ser uma ficção cientifica mais que satisfatória, ainda saímos
+                        da sala com a
+                        impressão de que poderia ter sido melhor...</p>
+                </div>
+                <div class="block-4">
+                    <h3>Cinema em Cena</h3>
+                    <img src="../img/stars/3_5.png" alt="">
+                    <p>É um filme intrigante com boas sequências de ação e uma trama suficientemente interessante
+                        para justificar todas as explosões - até que, no terceiro ato, abandona o conceito que o tornava
+                        interessante e se transforma em um longa corriqueiro e decepcionante.</p>
+                </div>
+                <div class="block-4">
+                    <h3>Critikat.com</h3>
+                    <img src="../img/stars/4_0.png" alt="">
+                    <p>A trama - e todo o projeto do filme, na verdade - poderia ser apenas a expressão de um grande
+                        orgulho se Tom Cruise não demonstrasse, mais uma vez, o seu carisma e graça física raros. O ator
+                        não perdeu nada de sua destreza nas cenas de ação...</p>
                 </div>
             </div>
         </div>
 
-        <div class="content content-2">
-            <h2>Curiosidades</h2>
-            <div id="curiosidades">
-                <div class="block-3">
-                    <p class="titulo"><b>Sucesso literário japonês</b></p>
-                    <p class="descricao">Adaptação do romance "All You Need is Kill", de Hiroshi Sakurazaka.</p>
-                </div>
-                <div class="block-3">
-                    <p class="titulo"><b>Astros do mesmo naipe</b></p>
-                    <p class="descricao">Brad Pitt foi cogitado para o papel principal. Ele trabalhou com o diretor Doug
-                        Liman em Sr. e Sra. Smith.</p>
-                </div>
-                <div class="block-3">
-                    <p class="titulo"><b>Haja força</b></p>
-                    <p class="descricao">O "exosuit" utilizado pelos personagens pesava entre 40 e 55 quilos.</p>
+        <div id="curios-fotos">
+            <div class="curiosidades">
+                <h2>Curiosidades</h2>
+                <hr>
+                <h3>Baseado em uma Light Novel Japonesa</h3>
+                <p>O filme é inspirado na light novel japonesa All You Need Is Kill, escrita por Hiroshi Sakurazaka. A
+                    adaptação para o cinema trouxe mudanças significativas, mas a ideia central de “morrer e repetir”
+                    permaneceu.</p>
+                <hr>
+                <h3>Tom Cruise Faz Suas Próprias Acrobacias</h3>
+                <p>Tom Cruise é famoso por realizar suas próprias cenas de ação, e No Limite do Amanhã não foi exceção.
+                    Ele enfrentou cenas intensas com o traje mecânico pesado, mesmo durante as sequências de repetição
+                    de mortes.</p>
+                <hr>
+                <h3>Haja Força</h3>
+                <p>O "exosuit" utilizado pelos personagens pesava entre 40 e 55 quilos.
+                    Emily Blunt investiu em um intenso treinamento físico durante quatro meses para se preparar para o
+                    papel da destemida Rita Vrataski, a "Full Metal Bitch".</p>
+                <hr>
+                <h3>Sucesso no Streaming e em DVD</h3>
+                <p>Embora o filme tenha tido uma recepção modesta nos cinemas, ele se tornou um sucesso cult nas
+                    plataformas de streaming e em DVD, onde foi redescoberto e ganhou uma base fiel de fãs.</p>
+                <hr>
+            </div>
+            <div class="fotos">
+                <h2>Fotos</h2>
+                <div class="grid-fotos">
+                    <img src="../img/scenes/limite-do-amanha-1.jpg" alt="">
+                    <img src="../img/scenes/limite-do-amanha-2.jpg" alt="">
+                    <img src="../img/scenes/limite-do-amanha-3.jpg" alt="">
+                    <img src="../img/scenes/limite-do-amanha-4.jpg" alt="">
+                    <img src="../img/scenes/limite-do-amanha-5.jpg" alt="">
+                    <img src="../img/scenes/limite-do-amanha-6.jpg" alt="">
                 </div>
             </div>
         </div>
