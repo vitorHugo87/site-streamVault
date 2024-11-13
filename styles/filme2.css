@@ -326,7 +326,7 @@ header .navbar .navbar-btn img {
     }
 
     #inicio {
-        margin: 20px 10px;
+        margin: 20px 10px 10px;
     }
 
     #inicio .imagem {
@@ -367,7 +367,7 @@ header .navbar .navbar-btn img {
     #sinop-trailer {
         grid-template-columns: 1fr;
         gap: 10px;
-        margin: 20px 10px;
+        margin: 10px 10px;
     }
 
     #sinop-trailer .sinopse {
@@ -375,7 +375,7 @@ header .navbar .navbar-btn img {
     }
 
     #analises {
-        margin: 20px 10px;
+        margin: 10px 10px;
     }
     
     #analises .blocks {
@@ -412,7 +412,7 @@ header .navbar .navbar-btn img {
     }
 
     #inicio {
-        margin: 20px 10px;
+        margin: 20px 10px 10px;
     }
 
     #inicio .imagem {
@@ -456,7 +456,7 @@ header .navbar .navbar-btn img {
         grid-template-columns: 1fr;
         grid-template-rows: auto 400px;
         gap: 10px;
-        margin: 20px 10px;
+        margin: 10px 10px;
     }
 
     #sinop-trailer .sinopse {
@@ -464,7 +464,7 @@ header .navbar .navbar-btn img {
     }
 
     #analises {
-        margin: 20px 10px;
+        margin: 10px 10px;
     }
     
     #analises .blocks {
@@ -474,7 +474,7 @@ header .navbar .navbar-btn img {
     #curios-fotos {
         grid-template-columns: 1fr;
         margin: 0 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -497,7 +497,7 @@ header .navbar .navbar-btn img {
     }
 
     #inicio {
-        margin: 20px 10px;
+        margin: 20px 10px 10px;
     }
 
     #inicio .imagem {
@@ -541,7 +541,7 @@ header .navbar .navbar-btn img {
         grid-template-columns: 1fr;
         grid-template-rows: auto 400px;
         gap: 10px;
-        margin: 20px 10px;
+        margin: 10px 10px;
     }
 
     #sinop-trailer .sinopse {
@@ -549,7 +549,7 @@ header .navbar .navbar-btn img {
     }
 
     #analises {
-        margin: 20px 10px;
+        margin: 10px 10px;
     }
     
     #analises .blocks {
